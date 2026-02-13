@@ -116,6 +116,10 @@ Use the **[Report Data Error](https://github.com/elokwentnie/compute-specs-db/is
 3. Submit a pull request with a clear description of your changes.
 4. Include sources or references for any new data.
 
+## Git history
+
+The commit history was squashed into a single initial commit before making this repository public. The original development history contained iterative changes, debugging steps, and configuration experiments that were not meaningful for external contributors. This gives the repo a clean starting point while preserving the final, reviewed state of all code and data.
+
 ## Security
 
 To report a security vulnerability, please see [SECURITY.md](SECURITY.md).
