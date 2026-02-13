@@ -44,7 +44,7 @@ def auto_import_if_empty():
     try:
         count = db.query(CPUSpec).count()
         if count == 0:
-            csv_file_path = "cpu_specifications.csv"
+            csv_file_path = "cpu_spec_validated.csv"
             if os.path.exists(csv_file_path):
                 try:
                     from import_data import import_csv_to_db
@@ -482,7 +482,7 @@ async def import_csv_file(
     """
     Import CPUs from uploaded CSV file (requires authentication)
     
-    CSV should be semicolon-delimited matching cpu_specifications.csv format.
+    CSV should be semicolon-delimited matching cpu_spec_validated.csv format.
     """
     if not file.filename.endswith('.csv'):
         raise HTTPException(status_code=400, detail="File must be a CSV file")
@@ -573,10 +573,10 @@ async def import_csv_from_repo(
     """
     Import CPUs from CSV file in repository (requires authentication)
     
-    Reads from cpu_specifications.csv in the repository root.
+    Reads from cpu_spec_validated.csv in the repository root.
     Useful for updating database when CSV is updated in GitHub.
     """
-    csv_file_path = "cpu_specifications.csv"
+    csv_file_path = "cpu_spec_validated.csv"
 
     if not os.path.exists(csv_file_path):
         raise HTTPException(

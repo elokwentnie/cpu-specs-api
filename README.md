@@ -2,7 +2,7 @@
 
 A public, searchable catalog of HPC and datacenter compute specifications with a web UI and REST API.
 
-Live site: https://hpc-cpu-specification-api.onrender.com/
+Live site: https://compute-specs-db.onrender.com/
 
 ## What this repo provides
 - Searchable specs table for server-class CPUs (GPU and ARM data planned)
@@ -16,7 +16,7 @@ Live site: https://hpc-cpu-specification-api.onrender.com/
 
 ## Website
 Browse the public site for data, visualizations, and API links:
-https://hpc-cpu-specification-api.onrender.com/
+https://compute-specs-db.onrender.com/
 
 ## API access
 The API supports:
